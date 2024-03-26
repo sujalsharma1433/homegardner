@@ -1,0 +1,255 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    position: sticky;    
+}
+
+body{
+    background-color:rgb(46, 44, 53) ;
+}
+
+header{
+    height: 750px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.logo a{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: "Norican", cursive;
+    font-size: 80px;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar{
+    background-color: rgb(41, 30, 30);
+    height: 150px;
+    line-height: 150px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navdiv ul li{
+   list-style-type: none;
+   display: inline-block;
+   
+}
+
+.navdiv ul li a{
+    color:whitesmoke;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    margin-right: 20px;
+    margin-left: 15px;
+    position: relative;
+    padding: 0 10px;
+}
+
+.navdiv ul li a:after{
+    content: "";
+    position: absolute;
+    background-color:whitesmoke;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.50s;
+    align-content: center;
+}
+
+.navdiv ul li a:hover{
+    font-size: 27px;
+    color: rgb(40, 155, 184);
+}
+
+.navdiv ul li a:hover:after{
+    width: 100%;
+}
+
+.slider{
+    width: 85%;
+    height: 550px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    background-image: url('images/image1.jpg');
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px white;
+    animation:slider 20s infinite linear;
+}
+
+@keyframes slider{
+    0%{background-image: url('images/image1.jpg');}
+    25%{background-image: url('images/image2.jpg'); }
+    50%{background-image: url('images/image3.jpg'); }
+    75%{background-image: url('images/image4.jpg'); }
+}
+
+main{
+    height: 1350px;
+    width: 100%;
+}
+
+.About p{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: justify;
+    color: whitesmoke;
+    border-style: double;
+    background-color: rgb(4, 37, 13);
+}
+
+#quote{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+    height: 80px;
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+    font-family:"Norican", cursive ;
+    background-color: burlywood;
+}
+
+.container{
+    height: 950px;
+    width: 100%;
+    background-color: darkslategray;
+}
+
+.container h3{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.plants1{
+    display: flex; 
+}
+
+.plants1 img{
+    height: 350px;
+    width: 300px;
+}
+
+.plants1 div{
+    flex-wrap: wrap;
+    background-color:white;
+    height: 400px;
+    width: 100%;
+    margin: 10px;
+    align-content: space-evenly;
+    border-radius: 20px;
+    text-align: center;
+    transition:0.3s;
+}
+
+.plants2{
+    display: flex;
+}
+
+.plants2 img{
+    height: 350px;
+    width: 300px;
+}
+
+.plants2 div{
+    flex-wrap: wrap;
+    background-color:white;
+    height: 400px;
+    width: 100%;
+    margin: 10px;  
+    align-content: space-evenly;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.info{
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+footer{
+    height: 300px;
+    width: 100%;
+    background-color:rgb(32, 31, 31);
+}
+
+.content{
+    text-align: center;
+    text-decoration: none;
+}
+
+.content h3{
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+    text-decoration-line: underline;
+}
+
+.content ul li{
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.content ul li a{
+    color: white;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 25px;
+}
+
+.social{
+    text-decoration: none;
+    text-align: center;
+}
+
+.social h3{
+    font-size: 30px;
+    color: white;
+    padding-top: 30px;
+    text-decoration: underline;
+}
+
+.social ul li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+.social ul li a{
+    color: white;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+.social ul li a:hover{
+    color: rgb(85, 183, 228);
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+
